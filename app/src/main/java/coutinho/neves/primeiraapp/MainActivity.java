@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             //o Onclick é executado quando clica o botão//
             public void onClick(View v) {
-                EditText etDigiteAqui = findViewById(R.id.etDigiteAqui);
+                EditText etDigiteAqui = findViewById(R.id.etDigiteAqui); //obtem o elemento caixa de texto
                 String textoDigitado = etDigiteAqui.getText().toString();
                 Intent i = new Intent(MainActivity.this, NextActivity.class);
                 i.putExtra("texto", textoDigitado);
